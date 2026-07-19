@@ -1,10 +1,15 @@
 package main
 
-import "fmt"
+import ( 
+	"bufio"
+	"fmt"
+	"os"
+	"strings"
+)
 
 func main() {
-	var a, b int
-	fmt.Scan(&a)
-	fmt.Scan(&b)
-	fmt.Println(a * b)
+	scanner := bufio.NewScanner(os.Stdin)
+	scanner.Scan()
+	line := scanner.Text()
+	fmt.Println(strings.ToUpper(line))
 }
