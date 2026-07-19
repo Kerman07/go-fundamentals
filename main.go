@@ -4,6 +4,7 @@ import "fmt"
 
 func main() {
 	var a, b int
-	fmt.Scan(&a, &b)
-	fmt.Println(a + b)
+	fmt.Scan(&a)
+	fmt.Scan(&b)
+	fmt.Println(a * b)
 }
