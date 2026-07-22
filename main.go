@@ -4,12 +4,13 @@ import (
 	"bufio"
 	"fmt"
 	"os"
-	"strings"
 )
 
 func main() {
 	scanner := bufio.NewScanner(os.Stdin)
 	scanner.Scan()
-	line := scanner.Text()
-	fmt.Println(strings.ToUpper(line))
+	name := scanner.Text()
+	scanner.Scan()
+	age := scanner.Text()
+	fmt.Printf("Hi, %s! You are %s years old.", name, age)
 }
