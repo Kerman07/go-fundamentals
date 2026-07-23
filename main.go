@@ -5,17 +5,13 @@ import (
 )
 
 func main() {
-	var integer int
-	fmt.Scan(&integer)
+	var N int
+	fmt.Scan(&N)
 
-	switch {
-	case integer%15 == 0:
-		fmt.Println("FizzBuzz")
-	case integer%5 == 0:
-		fmt.Println("Buzz")
-	case integer%3 == 0:
-		fmt.Println("Fizz")
-	default:
-		fmt.Println(integer)
+	sum, i := 0, 1
+	for i <= N {
+		sum += i
+		i += 1
 	}
+	fmt.Println(sum)
 }
